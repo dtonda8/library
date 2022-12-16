@@ -1,3 +1,31 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+html, body {
+    text-align: center;
+    height: 100%;
+}
+
+#add-book {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background: linear-gradient(#0000, rgb(0 0 0/10%)) top/100% 800%;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+#add-book:hover {
+    background-position: bottom;
+}
+
 form {
     border: 2px solid grey;
     border-radius: 5px;
@@ -26,14 +54,21 @@ form {
     display: none;
 }
 
-#grid-display {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 400px));
-    grid-template-rows: repeat(3, 1fr);
+#grid-container {
+    /* text-align: center; */
+}
+
+div#grid-display {
+    display: inline-grid;
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+    grid-template-rows: repeat(3, 300px);
+    gap: 10px;
 }
 
 .card {
-    border: 2px solid black;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,4 +92,10 @@ form {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.card > button {
+    width: 90%;
+    margin: 5px;
+    height: 35px;
 }
