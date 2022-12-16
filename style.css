@@ -1,0 +1,60 @@
+form {
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#page-mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#add-book-div {
+    position: fixed;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
+    top: 20%;
+    background-color: white;
+}
+
+.unactive {
+    display: none;
+}
+
+#grid-display {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 400px));
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer img {
+    width: 20px;
+    height: auto;
+    display: flex;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #555555;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

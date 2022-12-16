@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div>Library</div>
+    <button id="add-book">+ Add Book</button>
+    <div id="grid-display"></div>
+    <div id="page-mask" class="unactive"></div>
+    <div id="add-book-div" class="unactive">
+        <form id="add-book-form">
+            Add book
+            <div>
+                <input type="text" id="title-input" class="input" required placeholder="Title">
+            </div>
+            <div>
+                <input type="text" id="author-input" class='input' required placeholder="Author">
+            </div>
+            <div>
+                <input type="number" id="page-input" class='input'placeholder="Pages" required min="1">
+            </div>
+            <div>
+                <label>
+                    Have you read it?
+                    <input type="checkbox" id="has-read-it">
+                </label>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <div id="footer"> @dtonda8
+        <a href="https://github.com/dtonda8/library"><img src = 'github-image.png' alt="GitHub Link"></a>
+    </div>
+</body>
+</html>
